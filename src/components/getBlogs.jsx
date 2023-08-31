@@ -1,6 +1,6 @@
 const getBlogs = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/blogs", {
+    const res = await fetch(`${process.env.URL}/api/blogs`, {
       cache: "no-store",
     });
     if (!res.ok) {
